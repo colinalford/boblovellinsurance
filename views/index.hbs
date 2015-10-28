@@ -1,7 +1,9 @@
-<h1>{{ title }}</h1>
+<div class="left">
+    {{> bio }}
 
-{{> bio }}
+    {{> request_information_form }}
+</div>
 
-{{> request_information_form }}
-
-{{> insurance_providers }}
+<div class="right">
+    {{> products }}
+</div>
