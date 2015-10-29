@@ -59,6 +59,8 @@ main {
     margin-right: auto;
     padding-top: 1%;
     background-color: white;
+    border-left: 2px solid #E0D4BA;
+    border-right: 2px solid #E0D4BA;
 }
 
 .left, .right {
@@ -158,18 +160,31 @@ div.product span {
     top: 25%;
     height: 100%;
     font-size: 1.5em;
+    color: #6C6C6C;
 }
 
 .fa-home {
-    color: green;
+    color: #97FF97;
+}
+
+.fa-home:hover {
+    color: #008000;
 }
 
 .fa-heartbeat {
-    color: red;
+    color: #FF9999;
+}
+
+.fa-heartbeat:hover {
+    color: #FF0000;
 }
 
 .fa-life-ring {
-    color: black;
+    color: #A1A1A1;
+}
+
+.fa-life-ring:hover {
+    color: #000000;
 }
 
 /* Footer */
@@ -193,11 +208,17 @@ footer {
     background: linear-gradient(#77A4D2, #336699);
 }
 
+.footer-title-bar h3 {
+    margin-left: 1%;
+}
+
 .insurance-provider {
     display: inline-block;
     min-width: 125px;
     width: 10%;
     padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .insurance-provider img {
