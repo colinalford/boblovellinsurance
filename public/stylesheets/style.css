@@ -1,8 +1,6 @@
 
 
 body {
-  padding: 0;
-  margin: 0;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -10,26 +8,21 @@ a {
   color: #00B7FF;
 }
 
-header {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* Main content containers*/
 
 main {
+    position: relative;
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .left, .right {
     display: inline-block;
-    margin-bottom: -23px;
+    margin: 0;
+    vertical-align: top;
     width: 50%;
-    height: 668px;
+    height: 670px;
     overflow: hidden;
 }
 
@@ -138,7 +131,19 @@ div.product span {
 /* Insurance Providers Logos*/
 
 footer {
-    background-color: black;
+    border-top: 10px solid black;
+    background: repeating-linear-gradient(
+      135deg,
+      #FFFFFF,
+      #FFFFFF 10px,
+      #E5F2FF 10px,
+      #E5F2FF 20px
+    );
+}
+
+.footer-title-bar {
+    
+    background-color: #003AAD;
 }
 
 .insurance-provider {
