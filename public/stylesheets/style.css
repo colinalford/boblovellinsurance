@@ -2,19 +2,55 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #F0EADD;
 }
 
 a {
   color: #00B7FF;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+header {
+    background: -webkit-linear-gradient(#77A4D2, #336699);
+    background: -o-linear-gradient(#77A4D2, #336699);
+    background: linear-gradient(#77A4D2, #336699);
+}
+
+#tree-logo {
+    height: 75px;
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 40%;
+}
+
+header > h1 {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color: white;
+    line-height: 75px;
+    margin-left: 1%;
+}
+
+.divider {
+    padding: 5px;
+}
+
 /* Main content containers*/
 
 main {
     position: relative;
-    width: 1400px;
+    width: 1350px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 1%;
+    background-color: white;
 }
 
 .left, .right {
@@ -89,8 +125,8 @@ main {
     position: absolute;
     top: 1em;
     padding: 10px 50px 10px 50px;
-    border: 1px solid #6699FF;
-    background-color: #6699FF;
+    border: 2px solid #000066;
+    background-color: #BDD3E9;
     border-radius: 30px;
 }
 
@@ -106,6 +142,7 @@ main {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1%;
 }
 
 div.product span {
@@ -131,26 +168,27 @@ div.product span {
 /* Insurance Providers Logos*/
 
 footer {
-    border-top: 10px solid black;
     background: repeating-linear-gradient(
       135deg,
       #FFFFFF,
-      #FFFFFF 10px,
-      #E5F2FF 10px,
-      #E5F2FF 20px
+      #FFFFFF 2px,
+      #D4E3F1 2px,
+      #D4E3F1 4px
     );
 }
 
 .footer-title-bar {
-    
-    background-color: #003AAD;
+    color: white;
+    background: -webkit-linear-gradient(#77A4D2, #336699);
+    background: -o-linear-gradient(#77A4D2, #336699);
+    background: linear-gradient(#77A4D2, #336699);
 }
 
 .insurance-provider {
     display: inline-block;
     min-width: 125px;
     width: 10%;
-    height: 100px;
+    padding: 1%;
 }
 
 .insurance-provider img {
