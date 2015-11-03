@@ -67,8 +67,8 @@ main {
     display: inline-block;
     margin: 0;
     vertical-align: top;
+    height: 600px;
     width: 50%;
-    height: 670px;
     overflow: hidden;
 }
 
@@ -76,65 +76,42 @@ main {
 
 #bio-container {
     position: relative;
-    width: 300px;
-    height: 200px;
-    margin-left: 25%;
-    text-align: center;
-    background-color: #fff;
-    border: 8px solid #666;
-    -webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	-webkit-box-shadow: 2px 2px 4px #888;
-	-moz-box-shadow: 2px 2px 4px #888;
-	box-shadow: 2px 2px 4px #888;
+    height: 20%;
+    margin-left: 5%;
+    margin-top: 2%;
 }
 
-#bio-container:before {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: 30px;
-    top: 200px;
-    border: 25px solid;
-    border-color: #666 transparent transparent #666;
-}
-
-#bio-container:after {
-    content: ' ';
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: 38px;
-    top: 200px;
-    border: 15px solid;
-    border-color: #fff transparent transparent #fff;
+.quote-icon {
+    float: left;
+    font-size: 1em;
+    padding-right: 2%;
 }
 
 /* Request Info Form*/
 
 #request-info-container {
     position: relative;
+    height: 80%;
     margin-left: 2%;
     margin-top: 1%;
+    vertical-align: bottom;
 }
 
-#request-info-container div {
+div#man-pointing {
     display: inline-block;
+    width: 49%;
+    vertical-align: bottom;
 }
 
-#man-pointing {
-    height: 450px;
-    width: auto;
+#man-pointing img {
+    width: 100%;
+    max-height: auto;
 }
 
 #form-container {
-    margin-left: 5%;
-    margin-top: 1%;
-    position: absolute;
-    top: 1em;
-    padding: 10px 50px 10px 50px;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
     border: 2px solid #000066;
     background-color: #BDD3E9;
     border-radius: 30px;
@@ -142,6 +119,12 @@ main {
 
 #form-container * {
     text-align: center;
+}
+
+#submit {
+    margin: 5px;
+    font-size: 1em;
+    padding: 2%;
 }
 
 /* Right */
@@ -160,7 +143,7 @@ div.product span {
     top: 25%;
     height: 100%;
     font-size: 1.5em;
-    color: #6C6C6C;
+    color: black;
 }
 
 .fa-home {
@@ -198,6 +181,7 @@ footer {
       #D4E3F1 2px,
       #D4E3F1 4px
     );
+    padding-bottom: 5%;
 }
 
 .footer-title-bar {
@@ -224,4 +208,50 @@ footer {
 .insurance-provider img {
     max-width: 100%;
     max-height: 100%;
+}
+
+@media (max-width: 1380px) {
+    main {
+        border: none;
+        width: 100%;
+    }
+
+    #man-pointing {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #form-container {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        margin-left: 2%;
+        width: 49%;
+    }
+
+}
+
+@media (max-width: 1121px) {
+
+    .left, .right {
+        display: block;
+        width: 100%;
+    }
+    #man-pointing, #form-container {
+        position: relative;
+        display: inline-block;
+        width: 45%;
+        margin: 0;
+    }
+
+    #request-info-container {
+        height: auto;
+    }
+
+    #man-pointing > img {
+        height: 100%;
+        max-width: 100%;;
+    }
+
 }
