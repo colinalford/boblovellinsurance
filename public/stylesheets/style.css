@@ -146,6 +146,7 @@ div.product span {
 
 .fa-home {
     color: #97FF97;
+    text-shadow: 2px 2px 2px black;
 }
 
 .fa-home:hover {
@@ -154,6 +155,7 @@ div.product span {
 
 .fa-heartbeat {
     color: #FF9999;
+    text-shadow: 2px 2px 2px black;
 }
 
 .fa-heartbeat:hover {
@@ -162,6 +164,8 @@ div.product span {
 
 .fa-life-ring {
     color: #A1A1A1;
+    text-shadow: 2px 2px 2px black;
+
 }
 
 .fa-life-ring:hover {
@@ -241,31 +245,28 @@ footer {
 
     .left {
         height: 500px;
+        border-bottom: 8px solid #336699;
     }
 
     .right {
         background-color: #77A4D2;
-        background: repeating-linear-gradient(
-          135deg,
-          #D4E3F1,
-          #D4E3F1 3px,
-          #4384C2 3px,
-          #4384C2 6px
-        );
-        border-bottom: 2px solid #29527B;
         height: auto;
+        border-top: 2px solid #F0EADD;
+        border-bottom: 3px solid #336699;
     }
 
     .product {
         margin-top: 1%;
         margin-bottom: 1%;
-        width: 33%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 32%;
         display: inline-block;
+        vertical-align: top;
     }
 
     div.product span {
-        color: white;
-        text-shadow: 4px 4px 8px #6C6C6C;
+        color: #F2F2F2;
     }
 
     .fa-life-ring {
