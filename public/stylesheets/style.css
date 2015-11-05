@@ -137,24 +137,21 @@ div#man-pointing {
     margin-right: auto;
 }
 
-div.product span {
-
-    height: 100%;
-    font-size: 1.5em;
-    color: black;
+.product-title {
+    font-size: 2em;
 }
 
 .fa-home {
-    color: #97FF97;
+    color: #33CC33;
     text-shadow: 2px 2px 2px black;
 }
 
 .fa-home:hover {
-    color: #008000;
+    color:#29A329;
 }
 
 .fa-heartbeat {
-    color: #FF9999;
+    color: #FF4D4D;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -163,13 +160,17 @@ div.product span {
 }
 
 .fa-life-ring {
-    color: #A1A1A1;
+    color: #515151;
     text-shadow: 2px 2px 2px black;
 
 }
 
 .fa-life-ring:hover {
     color: #000000;
+}
+
+.product-info {
+    display: none;
 }
 
 /* Footer */
@@ -240,19 +241,22 @@ footer {
         display: block;
         width: 100%;
         margin: 0;
-        overflow: hidden;
     }
 
     .left {
-        height: 500px;
+        height: 520px;
         border-bottom: 8px solid #336699;
     }
 
     .right {
-        background-color: #77A4D2;
+        background-color: white;
         height: auto;
-        border-top: 2px solid #F0EADD;
+        border-top: 3px solid #BDD3E9;
         border-bottom: 3px solid #336699;
+    }
+
+    #form-container {
+        margin-bottom: 1%;
     }
 
     .product {
@@ -265,12 +269,8 @@ footer {
         vertical-align: top;
     }
 
-    div.product span {
-        color: #F2F2F2;
-    }
-
-    .fa-life-ring {
-        color: #878787;
+    .product-title {
+        font-size: 1.5em;
     }
 
     #man-pointing, #form-container {
@@ -313,7 +313,7 @@ footer {
 }
 
 /*next break point*/
-@media (max-width: 564px) {
+@media (max-width: 590px) {
     .product {
         display: block;
     }
