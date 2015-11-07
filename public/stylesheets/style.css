@@ -306,6 +306,16 @@ footer {
         font-size: 1.5em;
     }
 
+    .product-visible {
+        display: block;
+        width: 100%;
+    }
+
+    .product-info-display {
+        display: inline-block;
+        width: 80%;
+    }
+
     #man-pointing, #form-container {
         position: relative;
         display: inline-block;
@@ -391,5 +401,30 @@ footer {
 
     .product {
         display: block;
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    .icon-container {
+        display: inline-block;
+    }
+
+    .product-info {
+        display: inline-block;
+        text-align: justify;
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
