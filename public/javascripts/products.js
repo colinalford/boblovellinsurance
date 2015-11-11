@@ -1,4 +1,11 @@
+
+
 var products = document.getElementsByClassName("product");
+
+// Adds event listener for product class.
+// Shows product-info on click and hides the other products.
+// Behavior changes with window size; Corresponds with CSS
+// TODO: Refactor
 
 for (i in products) {
     products[i].addEventListener("click", function() {

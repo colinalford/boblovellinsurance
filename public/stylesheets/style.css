@@ -402,6 +402,7 @@ footer {
     .product {
         display: block;
         width: 93%;
+        margin-top: 2%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -415,7 +416,12 @@ footer {
         text-align: justify;
         opacity: 1;
     }
+  }
 
+.client-info {
+  display: inline-block;
+  width: 12%;
+}
 
 
 

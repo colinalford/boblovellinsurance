@@ -25,7 +25,7 @@ router.post('/', function(req, res) {
         if (err) {
             res.send('Error', err);
         } else {
-            res.send('Successfully submitted information. We will contact you shortly!');
+            res.redirect('/');
         }
     })
 });
@@ -35,7 +35,15 @@ router.put('/', function(req, res) {
 });
 
 router.delete('/', function(req, res) {
-
+  NewClients.remove({
+    _id: req.params.id
+  }, function(error, client) {
+    if (err) {
+      res.send(err);
+    } else {
+      res.json({message: "Client successfully removed"});
+    };
+  });
 });
 
 module.exports = router;
